@@ -1,0 +1,35 @@
+/*
+   This class is dynamically applied via EJS to form inputs that fail backend validation.
+   It highlights the specific field with a red border and background to improve UX.
+*/
+
+.form-control {
+    margin: 1rem 0;
+}
+
+.form-control label,
+.form-control input,
+.form-control textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.25rem;
+}
+
+.form-control input,
+.form-control textarea {
+    border: 1px solid #a1a1a1;
+    font: inherit;
+    border-radius: 2px;
+}
+
+.form-control input:focus,
+.form-control textarea:focus {
+    outline-color: #00695c;
+    background-color: #f7f7f7;
+}
+
+.form-control input.invalid,
+.form-control textarea.invalid {
+    border: 1px solid red !important;
+    background-color: #ffd1d1 !important;
+}
